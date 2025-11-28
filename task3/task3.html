@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+ 
+
+</head>
+<body>
+    <h2>basic html form elements</h2> 
+  <form action="on submit">
+        <fieldset>
+        <legend>personal information </legend>
+        <label for="name" >Name(test)</label>
+        <input type="text" id="name" name=" username " placeholder="enter your name" required>
+        </fieldset>
+
+    <hr>
+
+        <fieldset>
+        <legend>contact & security </legend>
+        <label for="email" >Email:</label>
+        <input type="email" id="email" name=" useremail " placeholder="enter email" required>
+       <label for="password" >password:</label>
+        <input type="password" id="password" name=" userpassword " hidden placeholder="enterpassword">  
+        </fieldset>
+    
+    
+ <hr>
+    
+        <fieldset>
+        <legend>perferances </legend>
+        <label for="color" >favorite color</label>
+        <input type="color" id="color" name=" color " value="#DF2020"
+        placeholder="enter your name">
+        </fieldset>
+    
+    
+
+        <fieldset>
+        <legend>Range & options </legend>
+        <label for="range" >volume( range 0-100):</label>
+        <input type="range" id="range" name=" range" min="25" step="4">
+        <p>select your favorite pet</p>
+        <input type="radio" id="dog"name="favorite pet" value="Dog">
+        <label for="dog">Dog</label>
+        <br>
+        <input type="radio" id="cat"name="favorite pet" value="cat">
+        <label for="cat">cat</label>
+        <br>
+        <input type="radio" id="bird"name="favorite pet" value="bird">
+        <label for="bird">Bird</label>
+        <p>Interests(check all thats apply):</p>
+    <input type="checkbox" id="coding"name="interests" value="coding">
+        <label for="coding">coding</label>
+        <br>
+        <input type="checkbox" id="music"name="interests" value="music">
+        <label for="music">music</label>
+        <br>
+        <input type="checkbox" id="travel"name="interests" value="travel">
+        <label for="travel">travel</label>
+        </fieldset>
+    
+        <fieldset>
+        <legend>selections </legend>
+        <label>choose a country</label>
+        <select>
+            <option value="united state">UK</option>
+           <option >Egypt</option>
+          <option >india</option>
+          <option >london</option>
+          <option >franch</option>
+        </select>
+        </fieldset>
+        <fieldset>
+            <legend>comment</legend>
+            <label>your comment (textarea):</label>
+            <br>
+            <textarea rows="6" cols="9" required placeholder="enter comment" name="comment">
+
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <legend>file upload</legend>
+            <label for="file">upload a file</label>
+
+            <input type="file" id="file" name="image" >
+        </fieldset>
+        <fieldset>
+            <legend>specialized text inputs</legend>
+            <label for="wep">search this site</label>
+
+            <input type="search" id="wep" name="search" >
+            <br>
+            <label for="url">your website ULl</label>
+
+            <input type="url" id="url" name="url" >
+        </fieldset>
+         <fieldset>
+            <legend>Data& time</legend>
+            <label for="time">Date:</label>
+            <input type="date" id="date" name="date" >
+            <br>
+            <label for="month"> month:</label>
+            <input type="month" id="month" name="month" >
+            <br>
+           <label for="time"> time :</label>
+            <input type="time" id="time" name="time" >
+        </fieldset>
+    <fieldset>
+        <legend>Datalist(suggestion)</legend>
+        <input list="wep application">
+        <datalist id="wep application">
+            <option value=" wep browser"> browser</option>
+            <option value> chrome</option>
+            <option value=> firefox</option>
+            <option value=> facebook</option>
+        </datalist>
+    </fieldset>
+    <input type="submit" value="submit form">
+    <input type="reset" value="clear form">
+    </form>
+</body>
